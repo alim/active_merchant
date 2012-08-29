@@ -8,7 +8,7 @@ module ActiveMerchant #:nodoc:
 
         # Overwrite this if you want to change the Paypal test url
         mattr_accessor :test_url
-        self.test_url = 'https://test.nelnet.com/'
+        self.test_url = 'http://localhost:3000/gateway/payment'
         
         # Overwrite this if you want to change the Paypal production url
         mattr_accessor :production_url 

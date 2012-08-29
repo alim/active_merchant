@@ -5,7 +5,7 @@ module ActiveMerchant #:nodoc:
         class Helper < ActiveMerchant::Billing::Integrations::Helper
           # Replace with the real mapping
           mapping :account, ''
-          mapping :amount, ''
+          mapping :amount, 'amount'
         
           mapping :order, ''
 
@@ -27,6 +27,11 @@ module ActiveMerchant #:nodoc:
           mapping :description, ''
           mapping :tax, ''
           mapping :shipping, ''
+          
+          def initialize(order, account, options = {})
+          	super
+          end
+          
         end
       end
     end
