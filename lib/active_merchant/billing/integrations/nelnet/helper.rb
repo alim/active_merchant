@@ -30,6 +30,7 @@ module ActiveMerchant #:nodoc:
           
           def initialize(order, account, options = {})
           	super
+          	add_field('amount', 'purchase amount')
           end
           
         end
